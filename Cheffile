@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'apt'
+
+# external
+
+cookbook 'chefenv',
+  :git => 'https://github.com/shimizukawa/chef-chefenv'
