@@ -1,4 +1,4 @@
-chef cookbook maintainance environment by using Vagrant+Chef
+chef cookbook maintenance environment by using Vagrant+Chef
 =============================================================
 
 requirement
@@ -17,7 +17,7 @@ preparation
 up environment
 ---------------
 
-1. `curl -O https://github.com/shimizukawa/vagrant-chef-env/archive/master.zip`
+1. `curl -O https://github.com/shimizukawa/vagrant-chefenv/archive/master.zip`
 2. `unzip master.zip`
 3. `cd vagrant-chef-env-master`
 4. `mkdir cookbooks`
