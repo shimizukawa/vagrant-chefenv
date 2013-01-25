@@ -71,7 +71,6 @@ Vagrant::Config.run do |config|
     # You may also specify custom JSON attributes:
     chef.json = {
       :chefenv => {
-        :dotchefpath => '/home/vagrant/.chef',
         :user => 'vagrant',
         :copyright => 'Takayuki SHIMIZUKAWA',
         :email => 'shimizukawa@gmail.com',
