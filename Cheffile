@@ -8,3 +8,6 @@ cookbook 'apt'
 
 cookbook 'chefenv',
   :git => 'https://github.com/shimizukawa/chef-chefenv'
+
+cookbook 'shimizukawa-env',
+  :git => 'https://github.com/shimizukawa/chef-shimizukawa-env'

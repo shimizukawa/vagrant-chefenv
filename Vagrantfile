@@ -67,6 +67,7 @@ Vagrant::Config.run do |config|
     chef.cookbooks_path = "cookbooks"
     chef.add_recipe "apt"
     chef.add_recipe "chefenv"
+    chef.add_recipe "shimizukawa-env"
 
     # You may also specify custom JSON attributes:
     chef.json = {
