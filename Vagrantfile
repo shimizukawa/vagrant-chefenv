@@ -20,10 +20,7 @@ Vagrant::Config.run do |config|
         "global" => "1.9.3-p392",
         "gems" => {
           "1.9.3-p392" => [{"name" => "bundler"}]
-        },
-        "user_installs" => [
-          {"user" => "vagrant"}
-        ]
+        }
       },
       :chefenv => {
         :user => 'vagrant',
