@@ -7,7 +7,7 @@ cookbook 'apt'
 # external
 
 cookbook 'chefenv',
-  :git => 'https://github.com/shimizukawa/chef-chefenv'
+  :git => 'https://github.com/shimizukawa/chef-chefenv.git'
 
 cookbook 'shimizukawa-env',
-  :git => 'https://github.com/shimizukawa/chef-shimizukawa-env'
+  :git => 'https://github.com/shimizukawa/chef-shimizukawa-env.git'
