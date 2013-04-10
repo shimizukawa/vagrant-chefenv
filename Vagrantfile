@@ -19,7 +19,10 @@ Vagrant::Config.run do |config|
         "rubies" => ["1.9.3-p392"],
         "global" => "1.9.3-p392",
         "gems" => {
-          "1.9.3-p392" => [{"name" => "bundler"}]
+          "1.9.3-p392" => [
+            {"name" => "bundler"},
+            {"name" => "knife-solo"},
+          ]
         }
       },
       :chefenv => {
