@@ -22,6 +22,8 @@ Vagrant::Config.run do |config|
           "1.9.3-p392" => [
             {"name" => "bundler"},
             {"name" => "knife-solo"},
+            {"name" => "knife-solo_data_bag"},
+            {"name" => "capistrano-paratrooper-chef"},
           ]
         }
       },
