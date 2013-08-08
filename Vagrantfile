@@ -1,8 +1,10 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-Vagrant::Config.run do |config|
+Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu-12.04-x64"
+  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+  config.vm.hostname = "chefenv"
 
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "cookbooks"
