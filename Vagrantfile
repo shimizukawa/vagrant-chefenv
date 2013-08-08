@@ -8,12 +8,8 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "cookbooks"
-    chef.add_recipe "ruby_build"
-    chef.add_recipe "rbenv::system"
-    chef.add_recipe "rbenv::vagrant"
-    chef.add_recipe "apt"
-    chef.add_recipe "chefenv"
-    chef.add_recipe "chefenv::knife_solo"
+    chef.roles_path = "roles"
+    chef.add_role "chefenv"
     chef.add_recipe "shimizukawa-env"
 
     # You may also specify custom JSON attributes:
