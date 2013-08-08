@@ -39,11 +39,12 @@ GIT
 GIT
   remote: https://github.com/shimizukawa/chef-myrecipe.git
   ref: master
-  sha: 8bf7775f4ac1f0524d2cad73417b59cc1129c68e
+  sha: deb07c7732d37dd3a13a4499fd611b764e9da176
   specs:
-    myrecipe (0.4.0)
+    myrecipe (0.4.2)
       hostsfile (>= 0.0.0)
       logrotate (>= 0.0.0)
+      rbenv (>= 0.0.0)
 
 GIT
   remote: https://github.com/shimizukawa/chef-shimizukawa-env.git

@@ -15,13 +15,9 @@
 		"myrecipe": {
 			"install_packages": [
 				{"name": "chef", "version": ">=11.6.0", "provider": "gem"},
-				{"name": "librarian-chef", "provider": "gem"}
-			],
-			"install_local_gems": {
-				"gems": [
-					"knife-solo-0.3.0.pre4.gem"
-				]
-			}
+				{"name": "librarian-chef", "provider": "gem"},
+				{"name": "knife-solo-0.3.0.pre4.gem", "cookbook": "myrecipe"}
+			]
 		}
 	},
 	"override_attributes": {},
