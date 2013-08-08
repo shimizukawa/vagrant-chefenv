@@ -1,5 +1,4 @@
 .DS_Store
 .vagrant
-*.lock
 tmp
 cookbooks

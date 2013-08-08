@@ -3,11 +3,9 @@
 site 'http://community.opscode.com/api/v1'
 
 cookbook 'apt'
+cookbook 'ruby_build'
 
 # external
-
-cookbook 'ruby_build',
-  :git => 'https://github.com/fnichol/chef-ruby_build.git'
 
 cookbook 'rbenv',
   :git => 'https://github.com/fnichol/chef-rbenv.git'
@@ -17,3 +15,7 @@ cookbook 'chefenv',
 
 cookbook 'shimizukawa-env',
   :git => 'https://github.com/shimizukawa/chef-shimizukawa-env.git'
+
+cookbook 'myrecipe',
+  :git => 'https://github.com/shimizukawa/chef-myrecipe.git'
+
