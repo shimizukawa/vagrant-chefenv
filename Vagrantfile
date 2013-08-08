@@ -7,6 +7,7 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "chefenv"
 
   config.vm.provision :chef_solo do |chef|
+    #chef.log_level = 'debug'
     chef.cookbooks_path = "cookbooks"
     chef.roles_path = "roles"
     chef.add_role "chefenv"
@@ -14,17 +15,6 @@ Vagrant.configure("2") do |config|
 
     # You may also specify custom JSON attributes:
     chef.json = {
-      "rbenv" => {
-        "rubies" => ["1.9.3-p392"],
-        "global" => "1.9.3-p392",
-        "gems" => {
-          "1.9.3-p392" => [
-            {"name" => "bundler"},
-            {"name" => "knife-solo_data_bag"},
-            {"name" => "capistrano-paratrooper-chef"},
-          ]
-        }
-      },
       :chefenv => {
         :user => 'vagrant',
         :copyright => 'Takayuki SHIMIZUKAWA',

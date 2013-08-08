@@ -1,17 +1,42 @@
 {
 	"name": "chefenv",
-	"default_attributes": {},
+	"default_attributes": {
+		"rbenv": {
+			"rubies": ["1.9.3-p392"],
+			"global": "1.9.3-p392",
+			"gems": {
+				"1.9.3-p392": [
+					{"name": "bundler"},
+					{"name": "knife-solo_data_bag"},
+					{"name": "capistrano-paratrooper-chef"}
+				]
+			}
+		},
+		"myrecipe": {
+			"install_packages": [
+				{"name": "chef", "version": ">=11.6.0", "provider": "gem"},
+				{"name": "librarian-chef", "provider": "gem"}
+			],
+			"install_local_gems": {
+				"gems": [
+					"knife-solo-0.3.0.pre4.gem"
+				]
+			}
+		}
+	},
 	"override_attributes": {},
 	"json_class": "Chef::Role",
 	"description": "",
 	"chef_type": "role",
 	"run_list": [
+		"recipe[apt]",
+		"recipe[git]",
 		"recipe[ruby_build]",
 		"recipe[rbenv::system]",
 		"recipe[rbenv::vagrant]",
-		"recipe[apt]",
 		"recipe[chefenv]",
-		"recipe[chefenv::knife_solo]"
+		"recipe[myrecipe::install_packages]",
+		"recipe[myrecipe::install_local_gems]"
 	],
 	"env_run_lists": {
 	}
